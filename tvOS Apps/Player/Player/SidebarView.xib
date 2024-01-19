@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="21701" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SidebarView" customModule="Player" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="1000"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="3IH-c4-VYc">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="1000"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="Lzf-9G-tle"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="lf6-ON-muM"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="3IH-c4-VYc" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="2bM-5M-DXG"/>
+                <constraint firstItem="3IH-c4-VYc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="S14-QV-3zt"/>
+                <constraint firstItem="3IH-c4-VYc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Y3q-YI-cvj"/>
+                <constraint firstItem="3IH-c4-VYc" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="dbm-N1-zbb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tableView" destination="3IH-c4-VYc" id="Uye-mb-ekc"/>
+            </connections>
+            <point key="canvasLocation" x="-931" y="113"/>
+        </view>
+    </objects>
+</document>

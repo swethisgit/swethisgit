@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CategoryView" customModule="Popup" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdR-iL-8ea">
+                    <rect key="frame" x="40" y="20" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="Khb-bE-ddO"/>
+                        <constraint firstAttribute="width" constant="24" id="cPE-K8-3S9"/>
+                    </constraints>
+                    <color key="tintColor" red="0.14901961389999999" green="0.2588235438" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <backgroundConfiguration key="background" image="circlebadge" catalog="system"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="clickedEntertainment:" destination="iN0-l3-epB" eventType="touchUpInside" id="Pk6-JQ-CWF"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7T5-sr-Lgo">
+                    <rect key="frame" x="79" y="20" width="295" height="24"/>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="7T5-sr-Lgo" firstAttribute="leading" secondItem="hdR-iL-8ea" secondAttribute="trailing" constant="15" id="JSy-JM-bf8"/>
+                <constraint firstItem="hdR-iL-8ea" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="MGt-co-1f6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7T5-sr-Lgo" secondAttribute="trailing" constant="40" id="Qg9-26-95L"/>
+                <constraint firstItem="hdR-iL-8ea" firstAttribute="top" secondItem="7T5-sr-Lgo" secondAttribute="top" id="Rbo-oy-RiD"/>
+                <constraint firstItem="hdR-iL-8ea" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="rbR-p0-cvZ"/>
+                <constraint firstItem="7T5-sr-Lgo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="rdV-E0-UfZ"/>
+                <constraint firstItem="7T5-sr-Lgo" firstAttribute="leading" secondItem="hdR-iL-8ea" secondAttribute="trailing" constant="15" id="zdV-qB-0C8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="categoryName" destination="7T5-sr-Lgo" id="2i6-tk-72I"/>
+                <outlet property="optionButton" destination="hdR-iL-8ea" id="Q4W-kC-0Zz"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="-156.02678571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="circlebadge" catalog="system" width="128" height="120"/>
+    </resources>
+</document>

@@ -1,0 +1,7 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :tvos, '9.0'
+use_frameworks!
+
+target 'EPGComponent' do
+    pod 'FocusTvButton', '~> 3.1.0'
+end

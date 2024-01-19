@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="21507" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dateView" id="3DS-bj-Z86" customClass="DateView" customModule="HomeLiveApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="994" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3DS-bj-Z86" id="HUe-we-ZXr">
+                <rect key="frame" x="0.0" y="0.0" width="994" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skv-es-doz" customClass="FocusTvButton" customModule="HomeLiveApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="978" height="150"/>
+                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="dateSelected" destination="3DS-bj-Z86" eventType="primaryActionTriggered" id="Dgw-Es-3z5"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUF-bg-3H4">
+                        <rect key="frame" x="443" y="52" width="92" height="46"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="skv-es-doz" secondAttribute="bottom" id="GoQ-Y9-IIe"/>
+                    <constraint firstItem="RUF-bg-3H4" firstAttribute="centerX" secondItem="skv-es-doz" secondAttribute="centerX" id="IAl-ul-zXu"/>
+                    <constraint firstItem="skv-es-doz" firstAttribute="top" secondItem="HUe-we-ZXr" secondAttribute="top" id="cfw-j9-hqu"/>
+                    <constraint firstAttribute="trailing" secondItem="skv-es-doz" secondAttribute="trailing" id="dZ2-XC-xmV"/>
+                    <constraint firstItem="skv-es-doz" firstAttribute="leading" secondItem="HUe-we-ZXr" secondAttribute="leading" id="rlM-Eh-GOv"/>
+                    <constraint firstItem="RUF-bg-3H4" firstAttribute="centerY" secondItem="skv-es-doz" secondAttribute="centerY" id="yLC-6y-EdT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateBtn" destination="skv-es-doz" id="pQz-7Y-cjQ"/>
+                <outlet property="dateLabel" destination="RUF-bg-3H4" id="Ndp-hd-iro"/>
+            </connections>
+            <point key="canvasLocation" x="-5877" y="1124"/>
+        </tableViewCell>
+    </objects>
+</document>
