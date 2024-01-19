@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E1FB87825388E840016A629 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FB87725388E840016A629 /* AppDelegate.swift */; };
+		7E1FB87A25388E840016A629 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FB87925388E840016A629 /* SceneDelegate.swift */; };
+		7E1FB87C25388E840016A629 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FB87B25388E840016A629 /* ViewController.swift */; };
+		7E1FB87F25388E840016A629 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E1FB87D25388E840016A629 /* Main.storyboard */; };
+		7E1FB88225388E840016A629 /* VentunoPOC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FB88025388E840016A629 /* VentunoPOC.xcdatamodeld */; };
+		7E1FB88425388E880016A629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E1FB88325388E880016A629 /* Assets.xcassets */; };
+		7E1FB88725388E880016A629 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E1FB88525388E880016A629 /* LaunchScreen.storyboard */; };
+		7E1FB88F25388F100016A629 /* BottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FB88E25388F100016A629 /* BottomViewController.swift */; };
+		7E1FB899253896C10016A629 /* BottomPopupPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FB891253896C00016A629 /* BottomPopupPresentAnimator.swift */; };
+		7E1FB89A253896C10016A629 /* BottomPopupNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FB892253896C00016A629 /* BottomPopupNavigationController.swift */; };
+		7E1FB89B253896C10016A629 /* BottomPopupUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FB893253896C10016A629 /* BottomPopupUtils.swift */; };
+		7E1FB89C253896C10016A629 /* BottomPopupTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FB894253896C10016A629 /* BottomPopupTransitionHandler.swift */; };
+		7E1FB89D253896C10016A629 /* BottomPopupDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FB895253896C10016A629 /* BottomPopupDismissAnimator.swift */; };
+		7E1FB89E253896C10016A629 /* BottomPopupPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FB896253896C10016A629 /* BottomPopupPresentationController.swift */; };
+		7E1FB89F253896C10016A629 /* BottomPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FB897253896C10016A629 /* BottomPopupViewController.swift */; };
+		7E1FB8A0253896C10016A629 /* BottomPopupDismissInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FB898253896C10016A629 /* BottomPopupDismissInteractionController.swift */; };
+		7E1FB8A225389A390016A629 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FB8A125389A390016A629 /* CustomButton.swift */; };
+		7E7467282567FF2F00374F66 /* next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7467222567FF2F00374F66 /* next@2x.png */; };
+		7E7467292567FF2F00374F66 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7467232567FF2F00374F66 /* next.png */; };
+		7E74672A2567FF2F00374F66 /* next@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7467242567FF2F00374F66 /* next@3x.png */; };
+		7E74672B2567FF2F00374F66 /* previous@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7467252567FF2F00374F66 /* previous@2x.png */; };
+		7E74672C2567FF2F00374F66 /* previous@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7467262567FF2F00374F66 /* previous@3x.png */; };
+		7E74672D2567FF2F00374F66 /* previous.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7467272567FF2F00374F66 /* previous.png */; };
+		7E7467342567FF4C00374F66 /* CalenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E74672F2567FF4C00374F66 /* CalenderVC.swift */; };
+		7E7467352567FF4C00374F66 /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7467312567FF4C00374F66 /* CalenderView.swift */; };
+		7E7467362567FF4C00374F66 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7467322567FF4C00374F66 /* MonthView.swift */; };
+		7E7467372567FF4C00374F66 /* WeekdaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7467332567FF4C00374F66 /* WeekdaysView.swift */; };
+		7E7F51DB254C8152006B6E17 /* VentunoPOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7F51DA254C8152006B6E17 /* VentunoPOCTests.swift */; };
+		7E7F51E9254C827F006B6E17 /* VentunoPOCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7F51E8254C827F006B6E17 /* VentunoPOCUITests.swift */; };
+		7EAA77ED254DB48D0093A886 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA77EC254DB48D0093A886 /* Person.swift */; };
+		7EAC53642547061C00A2C8B7 /* ArgAppUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC53632547061C00A2C8B7 /* ArgAppUpdater.swift */; };
+		B807BC9E27EC5E0E00D2F6CC /* SibboFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D48E6927E9E8D300912C8E /* SibboFramework.xcframework */; };
+		B807BC9F27EC5E0E00D2F6CC /* SibboFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8D48E6927E9E8D300912C8E /* SibboFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8D48E6B27E9EB4A00912C8E /* SibboFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D48E6927E9E8D300912C8E /* SibboFramework.xcframework */; };
+		B8D48E6C27E9EB5000912C8E /* SibboFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D48E6927E9E8D300912C8E /* SibboFramework.xcframework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E7F51DD254C8152006B6E17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E1FB86C25388E840016A629 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E1FB87325388E840016A629;
+			remoteInfo = VentunoPOC;
+		};
+		7E7F51EB254C827F006B6E17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E1FB86C25388E840016A629 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E1FB87325388E840016A629;
+			remoteInfo = VentunoPOC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B807BCA027EC5E0E00D2F6CC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B807BC9F27EC5E0E00D2F6CC /* SibboFramework.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7E1FB87425388E840016A629 /* SibboPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SibboPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E1FB87725388E840016A629 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E1FB87925388E840016A629 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7E1FB87B25388E840016A629 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7E1FB87E25388E840016A629 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E1FB88125388E840016A629 /* VentunoPOC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VentunoPOC.xcdatamodel; sourceTree = "<group>"; };
+		7E1FB88325388E880016A629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E1FB88625388E880016A629 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E1FB88825388E880016A629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E1FB88E25388F100016A629 /* BottomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomViewController.swift; sourceTree = "<group>"; };
+		7E1FB891253896C00016A629 /* BottomPopupPresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentAnimator.swift; sourceTree = "<group>"; };
+		7E1FB892253896C00016A629 /* BottomPopupNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupNavigationController.swift; sourceTree = "<group>"; };
+		7E1FB893253896C10016A629 /* BottomPopupUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupUtils.swift; sourceTree = "<group>"; };
+		7E1FB894253896C10016A629 /* BottomPopupTransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupTransitionHandler.swift; sourceTree = "<group>"; };
+		7E1FB895253896C10016A629 /* BottomPopupDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissAnimator.swift; sourceTree = "<group>"; };
+		7E1FB896253896C10016A629 /* BottomPopupPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentationController.swift; sourceTree = "<group>"; };
+		7E1FB897253896C10016A629 /* BottomPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupViewController.swift; sourceTree = "<group>"; };
+		7E1FB898253896C10016A629 /* BottomPopupDismissInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissInteractionController.swift; sourceTree = "<group>"; };
+		7E1FB8A125389A390016A629 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		7E7467222567FF2F00374F66 /* next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next@2x.png"; sourceTree = "<group>"; };
+		7E7467232567FF2F00374F66 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
+		7E7467242567FF2F00374F66 /* next@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next@3x.png"; sourceTree = "<group>"; };
+		7E7467252567FF2F00374F66 /* previous@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "previous@2x.png"; sourceTree = "<group>"; };
+		7E7467262567FF2F00374F66 /* previous@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "previous@3x.png"; sourceTree = "<group>"; };
+		7E7467272567FF2F00374F66 /* previous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = previous.png; sourceTree = "<group>"; };
+		7E74672F2567FF4C00374F66 /* CalenderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderVC.swift; sourceTree = "<group>"; };
+		7E7467312567FF4C00374F66 /* CalenderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
+		7E7467322567FF4C00374F66 /* MonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
+		7E7467332567FF4C00374F66 /* WeekdaysView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekdaysView.swift; sourceTree = "<group>"; };
+		7E7F51D8254C8152006B6E17 /* SibboPOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SibboPOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7F51DA254C8152006B6E17 /* VentunoPOCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentunoPOCTests.swift; sourceTree = "<group>"; };
+		7E7F51DC254C8152006B6E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E7F51E6254C827F006B6E17 /* SibboPOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SibboPOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7F51E8254C827F006B6E17 /* VentunoPOCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentunoPOCUITests.swift; sourceTree = "<group>"; };
+		7E7F51EA254C827F006B6E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EAA77EC254DB48D0093A886 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		7EAC53632547061C00A2C8B7 /* ArgAppUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArgAppUpdater.swift; sourceTree = "<group>"; };
+		B8D48E6927E9E8D300912C8E /* SibboFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SibboFramework.xcframework; path = "../../../../../../../../Downloads/iOS-2/SibboFramework.xcframework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E1FB87125388E840016A629 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B807BC9E27EC5E0E00D2F6CC /* SibboFramework.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E7F51D5254C8152006B6E17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8D48E6B27E9EB4A00912C8E /* SibboFramework.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E7F51E3254C827F006B6E17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8D48E6C27E9EB5000912C8E /* SibboFramework.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E1FB86B25388E840016A629 = {
+			isa = PBXGroup;
+			children = (
+				7E1FB87625388E840016A629 /* SibboPOC */,
+				7E7F51D9254C8152006B6E17 /* VentunoPOCTests */,
+				7E7F51E7254C827F006B6E17 /* VentunoPOCUITests */,
+				7E1FB87525388E840016A629 /* Products */,
+				B8D48E6827E9E8D300912C8E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7E1FB87525388E840016A629 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E1FB87425388E840016A629 /* SibboPOC.app */,
+				7E7F51D8254C8152006B6E17 /* SibboPOCTests.xctest */,
+				7E7F51E6254C827F006B6E17 /* SibboPOCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E1FB87625388E840016A629 /* SibboPOC */ = {
+			isa = PBXGroup;
+			children = (
+				7EAC5362254705F700A2C8B7 /* App Update */,
+				7E1FB890253896AC0016A629 /* BottomView */,
+				7E1FB87725388E840016A629 /* AppDelegate.swift */,
+				7E1FB87925388E840016A629 /* SceneDelegate.swift */,
+				7E1FB87B25388E840016A629 /* ViewController.swift */,
+				7E1FB88E25388F100016A629 /* BottomViewController.swift */,
+				7E7467212567FF1B00374F66 /* Calendar */,
+				7E5331FF2550180B006EE166 /* Custom */,
+				7E5331FE255017FA006EE166 /* TestCase Class */,
+				7E1FB87D25388E840016A629 /* Main.storyboard */,
+				7E1FB88325388E880016A629 /* Assets.xcassets */,
+				7E1FB88525388E880016A629 /* LaunchScreen.storyboard */,
+				7E1FB88825388E880016A629 /* Info.plist */,
+				7E1FB88025388E840016A629 /* VentunoPOC.xcdatamodeld */,
+			);
+			path = SibboPOC;
+			sourceTree = "<group>";
+		};
+		7E1FB890253896AC0016A629 /* BottomView */ = {
+			isa = PBXGroup;
+			children = (
+				7E1FB895253896C10016A629 /* BottomPopupDismissAnimator.swift */,
+				7E1FB898253896C10016A629 /* BottomPopupDismissInteractionController.swift */,
+				7E1FB892253896C00016A629 /* BottomPopupNavigationController.swift */,
+				7E1FB891253896C00016A629 /* BottomPopupPresentAnimator.swift */,
+				7E1FB896253896C10016A629 /* BottomPopupPresentationController.swift */,
+				7E1FB894253896C10016A629 /* BottomPopupTransitionHandler.swift */,
+				7E1FB893253896C10016A629 /* BottomPopupUtils.swift */,
+				7E1FB897253896C10016A629 /* BottomPopupViewController.swift */,
+			);
+			path = BottomView;
+			sourceTree = "<group>";
+		};
+		7E5331FE255017FA006EE166 /* TestCase Class */ = {
+			isa = PBXGroup;
+			children = (
+				7EAA77EC254DB48D0093A886 /* Person.swift */,
+			);
+			path = "TestCase Class";
+			sourceTree = "<group>";
+		};
+		7E5331FF2550180B006EE166 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				7E1FB8A125389A390016A629 /* CustomButton.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		7E7467212567FF1B00374F66 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				7E74672E2567FF4C00374F66 /* Controller */,
+				7E7467302567FF4C00374F66 /* View */,
+				7E7467232567FF2F00374F66 /* next.png */,
+				7E7467222567FF2F00374F66 /* next@2x.png */,
+				7E7467242567FF2F00374F66 /* next@3x.png */,
+				7E7467272567FF2F00374F66 /* previous.png */,
+				7E7467252567FF2F00374F66 /* previous@2x.png */,
+				7E7467262567FF2F00374F66 /* previous@3x.png */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		7E74672E2567FF4C00374F66 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7E74672F2567FF4C00374F66 /* CalenderVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7E7467302567FF4C00374F66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E7467312567FF4C00374F66 /* CalenderView.swift */,
+				7E7467322567FF4C00374F66 /* MonthView.swift */,
+				7E7467332567FF4C00374F66 /* WeekdaysView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7E7F51D9254C8152006B6E17 /* VentunoPOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E7F51DA254C8152006B6E17 /* VentunoPOCTests.swift */,
+				7E7F51DC254C8152006B6E17 /* Info.plist */,
+			);
+			path = VentunoPOCTests;
+			sourceTree = "<group>";
+		};
+		7E7F51E7254C827F006B6E17 /* VentunoPOCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7E7F51E8254C827F006B6E17 /* VentunoPOCUITests.swift */,
+				7E7F51EA254C827F006B6E17 /* Info.plist */,
+			);
+			path = VentunoPOCUITests;
+			sourceTree = "<group>";
+		};
+		7EAC5362254705F700A2C8B7 /* App Update */ = {
+			isa = PBXGroup;
+			children = (
+				7EAC53632547061C00A2C8B7 /* ArgAppUpdater.swift */,
+			);
+			path = "App Update";
+			sourceTree = "<group>";
+		};
+		B8D48E6827E9E8D300912C8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8D48E6927E9E8D300912C8E /* SibboFramework.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E1FB87325388E840016A629 /* SibboPOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E1FB88B25388E880016A629 /* Build configuration list for PBXNativeTarget "SibboPOC" */;
+			buildPhases = (
+				7E1FB87025388E840016A629 /* Sources */,
+				7E1FB87125388E840016A629 /* Frameworks */,
+				7E1FB87225388E840016A629 /* Resources */,
+				B807BCA027EC5E0E00D2F6CC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SibboPOC;
+			productName = VentunoPOC;
+			productReference = 7E1FB87425388E840016A629 /* SibboPOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E7F51D7254C8152006B6E17 /* SibboPOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E7F51E1254C8152006B6E17 /* Build configuration list for PBXNativeTarget "SibboPOCTests" */;
+			buildPhases = (
+				7E7F51D4254C8152006B6E17 /* Sources */,
+				7E7F51D5254C8152006B6E17 /* Frameworks */,
+				7E7F51D6254C8152006B6E17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E7F51DE254C8152006B6E17 /* PBXTargetDependency */,
+			);
+			name = SibboPOCTests;
+			productName = VentunoPOCTests;
+			productReference = 7E7F51D8254C8152006B6E17 /* SibboPOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7E7F51E5254C827F006B6E17 /* SibboPOCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E7F51ED254C827F006B6E17 /* Build configuration list for PBXNativeTarget "SibboPOCUITests" */;
+			buildPhases = (
+				7E7F51E2254C827F006B6E17 /* Sources */,
+				7E7F51E3254C827F006B6E17 /* Frameworks */,
+				7E7F51E4254C827F006B6E17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E7F51EC254C827F006B6E17 /* PBXTargetDependency */,
+			);
+			name = SibboPOCUITests;
+			productName = VentunoPOCUITests;
+			productReference = 7E7F51E6254C827F006B6E17 /* SibboPOCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E1FB86C25388E840016A629 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Mobileapps;
+				TargetAttributes = {
+					7E1FB87325388E840016A629 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					7E7F51D7254C8152006B6E17 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 7E1FB87325388E840016A629;
+					};
+					7E7F51E5254C827F006B6E17 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 7E1FB87325388E840016A629;
+					};
+				};
+			};
+			buildConfigurationList = 7E1FB86F25388E840016A629 /* Build configuration list for PBXProject "SibboPOC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E1FB86B25388E840016A629;
+			productRefGroup = 7E1FB87525388E840016A629 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E1FB87325388E840016A629 /* SibboPOC */,
+				7E7F51D7254C8152006B6E17 /* SibboPOCTests */,
+				7E7F51E5254C827F006B6E17 /* SibboPOCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E1FB87225388E840016A629 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E1FB88725388E880016A629 /* LaunchScreen.storyboard in Resources */,
+				7E74672D2567FF2F00374F66 /* previous.png in Resources */,
+				7E7467292567FF2F00374F66 /* next.png in Resources */,
+				7E74672C2567FF2F00374F66 /* previous@3x.png in Resources */,
+				7E74672B2567FF2F00374F66 /* previous@2x.png in Resources */,
+				7E74672A2567FF2F00374F66 /* next@3x.png in Resources */,
+				7E1FB88425388E880016A629 /* Assets.xcassets in Resources */,
+				7E1FB87F25388E840016A629 /* Main.storyboard in Resources */,
+				7E7467282567FF2F00374F66 /* next@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E7F51D6254C8152006B6E17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E7F51E4254C827F006B6E17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E1FB87025388E840016A629 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E1FB88225388E840016A629 /* VentunoPOC.xcdatamodeld in Sources */,
+				7E1FB87C25388E840016A629 /* ViewController.swift in Sources */,
+				7E7467352567FF4C00374F66 /* CalenderView.swift in Sources */,
+				7E1FB89F253896C10016A629 /* BottomPopupViewController.swift in Sources */,
+				7E1FB88F25388F100016A629 /* BottomViewController.swift in Sources */,
+				7E1FB8A225389A390016A629 /* CustomButton.swift in Sources */,
+				7E1FB89B253896C10016A629 /* BottomPopupUtils.swift in Sources */,
+				7E1FB89C253896C10016A629 /* BottomPopupTransitionHandler.swift in Sources */,
+				7E1FB87825388E840016A629 /* AppDelegate.swift in Sources */,
+				7EAC53642547061C00A2C8B7 /* ArgAppUpdater.swift in Sources */,
+				7E1FB89D253896C10016A629 /* BottomPopupDismissAnimator.swift in Sources */,
+				7E7467362567FF4C00374F66 /* MonthView.swift in Sources */,
+				7E1FB89E253896C10016A629 /* BottomPopupPresentationController.swift in Sources */,
+				7E7467372567FF4C00374F66 /* WeekdaysView.swift in Sources */,
+				7E1FB8A0253896C10016A629 /* BottomPopupDismissInteractionController.swift in Sources */,
+				7E1FB899253896C10016A629 /* BottomPopupPresentAnimator.swift in Sources */,
+				7E1FB87A25388E840016A629 /* SceneDelegate.swift in Sources */,
+				7EAA77ED254DB48D0093A886 /* Person.swift in Sources */,
+				7E1FB89A253896C10016A629 /* BottomPopupNavigationController.swift in Sources */,
+				7E7467342567FF4C00374F66 /* CalenderVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E7F51D4254C8152006B6E17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7F51DB254C8152006B6E17 /* VentunoPOCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E7F51E2254C827F006B6E17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7F51E9254C827F006B6E17 /* VentunoPOCUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E7F51DE254C8152006B6E17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E1FB87325388E840016A629 /* SibboPOC */;
+			targetProxy = 7E7F51DD254C8152006B6E17 /* PBXContainerItemProxy */;
+		};
+		7E7F51EC254C827F006B6E17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E1FB87325388E840016A629 /* SibboPOC */;
+			targetProxy = 7E7F51EB254C827F006B6E17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E1FB87D25388E840016A629 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E1FB87E25388E840016A629 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7E1FB88525388E880016A629 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E1FB88625388E880016A629 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E1FB88925388E880016A629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E1FB88A25388E880016A629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E1FB88C25388E880016A629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = YT2J4973YT;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = BU6KAL7MDX;
+				INFOPLIST_FILE = SibboPOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartboxtv.nunchee.ios.chefservice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = kindpay_dev_only_cert;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = ios_dev_meeltv_v1;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E1FB88D25388E880016A629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = YT2J4973YT;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = BU6KAL7MDX;
+				INFOPLIST_FILE = SibboPOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartboxtv.nunchee.ios.chefservice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = kindpay_dev_only_cert;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = ios_dev_meeltv_v1;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7E7F51DF254C8152006B6E17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VentunoPOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobileapp.VentunoPOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SibboPOC.app/SibboPOC";
+			};
+			name = Debug;
+		};
+		7E7F51E0254C8152006B6E17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VentunoPOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobileapp.VentunoPOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SibboPOC.app/SibboPOC";
+			};
+			name = Release;
+		};
+		7E7F51EE254C827F006B6E17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VentunoPOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobileapp.VentunoPOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VentunoPOC;
+			};
+			name = Debug;
+		};
+		7E7F51EF254C827F006B6E17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VentunoPOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobileapp.VentunoPOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VentunoPOC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E1FB86F25388E840016A629 /* Build configuration list for PBXProject "SibboPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E1FB88925388E880016A629 /* Debug */,
+				7E1FB88A25388E880016A629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E1FB88B25388E880016A629 /* Build configuration list for PBXNativeTarget "SibboPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E1FB88C25388E880016A629 /* Debug */,
+				7E1FB88D25388E880016A629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E7F51E1254C8152006B6E17 /* Build configuration list for PBXNativeTarget "SibboPOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E7F51DF254C8152006B6E17 /* Debug */,
+				7E7F51E0254C8152006B6E17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E7F51ED254C827F006B6E17 /* Build configuration list for PBXNativeTarget "SibboPOCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E7F51EE254C827F006B6E17 /* Debug */,
+				7E7F51EF254C827F006B6E17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7E1FB88025388E840016A629 /* VentunoPOC.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7E1FB88125388E840016A629 /* VentunoPOC.xcdatamodel */,
+			);
+			currentVersion = 7E1FB88125388E840016A629 /* VentunoPOC.xcdatamodel */;
+			path = VentunoPOC.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7E1FB86C25388E840016A629 /* Project object */;
+}
