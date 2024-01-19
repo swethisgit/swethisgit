@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DatePickerPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1vh-KT-ZxW">
+                                <rect key="frame" x="112" y="431" width="50" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="CYc-H1-9mn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j1M-UK-HcY">
+                                <rect key="frame" x="182" y="431" width="50" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SNc-nA-UOA">
+                                <rect key="frame" x="252" y="431" width="50" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="7qe-Gk-Xep">
+                                <rect key="frame" x="47" y="646" width="320" height="216"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-3187255870">
+                                    <!--1900-01-01 11:08:50 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="SNc-nA-UOA" firstAttribute="width" secondItem="1vh-KT-ZxW" secondAttribute="width" id="1dw-42-Xky"/>
+                            <constraint firstItem="j1M-UK-HcY" firstAttribute="width" secondItem="1vh-KT-ZxW" secondAttribute="width" id="2bw-qH-kBi"/>
+                            <constraint firstItem="1vh-KT-ZxW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5uf-BQ-cfW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7qe-Gk-Xep" secondAttribute="bottom" id="aac-OW-kKN"/>
+                            <constraint firstItem="SNc-nA-UOA" firstAttribute="leading" secondItem="j1M-UK-HcY" secondAttribute="trailing" constant="20" id="cdY-jY-IjT"/>
+                            <constraint firstItem="j1M-UK-HcY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="j81-al-EES"/>
+                            <constraint firstItem="j1M-UK-HcY" firstAttribute="leading" secondItem="1vh-KT-ZxW" secondAttribute="trailing" constant="20" id="m1m-Q5-D28"/>
+                            <constraint firstItem="j1M-UK-HcY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n6U-Ri-Ljx"/>
+                            <constraint firstItem="7qe-Gk-Xep" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wng-PP-9zD"/>
+                            <constraint firstItem="SNc-nA-UOA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xMf-ak-XSS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateField" destination="1vh-KT-ZxW" id="zUO-F7-j8P"/>
+                        <outlet property="datePicker" destination="7qe-Gk-Xep" id="h7S-8C-qMS"/>
+                        <outlet property="monthField" destination="j1M-UK-HcY" id="SWi-4u-M05"/>
+                        <outlet property="yearField" destination="SNc-nA-UOA" id="bbC-Ht-dwP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
