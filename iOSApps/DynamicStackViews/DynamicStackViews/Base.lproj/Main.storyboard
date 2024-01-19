@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dynamic Stack View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DynamicStackViewController" customModule="DynamicStackViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XLe-uZ-ijw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="832"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="DQ4-eh-Rws">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYQ-zK-KER">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                                <state key="normal" title="Red view"/>
+                                                <connections>
+                                                    <action selector="addEntry:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SMu-xT-bfi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="DQ4-eh-Rws" firstAttribute="width" secondItem="XLe-uZ-ijw" secondAttribute="width" id="AbU-IQ-5uw"/>
+                                    <constraint firstItem="DQ4-eh-Rws" firstAttribute="leading" secondItem="XLe-uZ-ijw" secondAttribute="leading" id="RUg-qs-UWC"/>
+                                    <constraint firstAttribute="trailing" secondItem="DQ4-eh-Rws" secondAttribute="trailing" id="aCf-FS-6jz"/>
+                                    <constraint firstItem="DQ4-eh-Rws" firstAttribute="top" secondItem="XLe-uZ-ijw" secondAttribute="top" id="lss-sf-5G8"/>
+                                    <constraint firstAttribute="bottom" secondItem="DQ4-eh-Rws" secondAttribute="bottom" id="xxs-4k-o6D"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="WbB-V4-5bd"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="wvh-v3-plX"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XLe-uZ-ijw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="V8C-IB-Qqy"/>
+                            <constraint firstItem="XLe-uZ-ijw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lgu-WW-MDP"/>
+                            <constraint firstItem="XLe-uZ-ijw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sFJ-WY-zul"/>
+                            <constraint firstAttribute="bottom" secondItem="XLe-uZ-ijw" secondAttribute="bottom" constant="20" id="tO7-q7-Rgx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="XLe-uZ-ijw" id="5b6-8Y-2zh"/>
+                        <outlet property="stackView" destination="DQ4-eh-Rws" id="Ew6-1h-5Ca"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
