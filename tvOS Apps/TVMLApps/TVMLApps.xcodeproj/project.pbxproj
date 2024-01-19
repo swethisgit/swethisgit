@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B84438F3282D3A5F001A888F /* ImageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84438F2282D3A5F001A888F /* ImageDelegate.swift */; };
+		B84438F5282D6E6F001A888F /* GradeImageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84438F4282D6E6F001A888F /* GradeImageStoryboard.storyboard */; };
+		B844A3B8282BBC9200C972BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B844A3B7282BBC9200C972BD /* AppDelegate.swift */; };
+		B844A3BA282BBC9200C972BD /* GradeImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B844A3B9282BBC9200C972BD /* GradeImageViewController.swift */; };
+		B844A3BF282BBC9400C972BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B844A3BE282BBC9400C972BD /* Assets.xcassets */; };
+		B844A3C2282BBC9400C972BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B844A3C0282BBC9400C972BD /* LaunchScreen.storyboard */; };
+		B844A3E0282BE15700C972BD /* Presenter.js in Resources */ = {isa = PBXBuildFile; fileRef = B844A3DB282BE15600C972BD /* Presenter.js */; };
+		B844A3E1282BE15700C972BD /* ResourceLoader.js in Resources */ = {isa = PBXBuildFile; fileRef = B844A3DC282BE15600C972BD /* ResourceLoader.js */; };
+		B844A3E2282BE15700C972BD /* application.js in Resources */ = {isa = PBXBuildFile; fileRef = B844A3DD282BE15600C972BD /* application.js */; };
+		B844A3E3282BE15700C972BD /* RenderImageTemplate.xml.js in Resources */ = {isa = PBXBuildFile; fileRef = B844A3DF282BE15600C972BD /* RenderImageTemplate.xml.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B84438F2282D3A5F001A888F /* ImageDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDelegate.swift; sourceTree = "<group>"; };
+		B84438F4282D6E6F001A888F /* GradeImageStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GradeImageStoryboard.storyboard; sourceTree = "<group>"; };
+		B844A3B4282BBC9200C972BD /* TVMLApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVMLApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B844A3B7282BBC9200C972BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B844A3B9282BBC9200C972BD /* GradeImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeImageViewController.swift; sourceTree = "<group>"; };
+		B844A3BE282BBC9400C972BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B844A3C1282BBC9400C972BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B844A3DB282BE15600C972BD /* Presenter.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Presenter.js; sourceTree = "<group>"; };
+		B844A3DC282BE15600C972BD /* ResourceLoader.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ResourceLoader.js; sourceTree = "<group>"; };
+		B844A3DD282BE15600C972BD /* application.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = application.js; sourceTree = "<group>"; };
+		B844A3DF282BE15600C972BD /* RenderImageTemplate.xml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RenderImageTemplate.xml.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B844A3B1282BBC9200C972BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B844A3AB282BBC9200C972BD = {
+			isa = PBXGroup;
+			children = (
+				B844A3DA282BE15600C972BD /* js */,
+				B844A3DE282BE15600C972BD /* template */,
+				B844A3B6282BBC9200C972BD /* TVMLApps */,
+				B844A3B5282BBC9200C972BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B844A3B5282BBC9200C972BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B844A3B4282BBC9200C972BD /* TVMLApps.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B844A3B6282BBC9200C972BD /* TVMLApps */ = {
+			isa = PBXGroup;
+			children = (
+				B844A3B7282BBC9200C972BD /* AppDelegate.swift */,
+				B84438F2282D3A5F001A888F /* ImageDelegate.swift */,
+				B844A3B9282BBC9200C972BD /* GradeImageViewController.swift */,
+				B84438F4282D6E6F001A888F /* GradeImageStoryboard.storyboard */,
+				B844A3BE282BBC9400C972BD /* Assets.xcassets */,
+				B844A3C0282BBC9400C972BD /* LaunchScreen.storyboard */,
+			);
+			path = TVMLApps;
+			sourceTree = "<group>";
+		};
+		B844A3DA282BE15600C972BD /* js */ = {
+			isa = PBXGroup;
+			children = (
+				B844A3DB282BE15600C972BD /* Presenter.js */,
+				B844A3DC282BE15600C972BD /* ResourceLoader.js */,
+				B844A3DD282BE15600C972BD /* application.js */,
+			);
+			name = js;
+			path = ../../../Desktop/Client/js;
+			sourceTree = "<group>";
+		};
+		B844A3DE282BE15600C972BD /* template */ = {
+			isa = PBXGroup;
+			children = (
+				B844A3DF282BE15600C972BD /* RenderImageTemplate.xml.js */,
+			);
+			name = template;
+			path = ../../../Desktop/Client/template;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B844A3B3282BBC9200C972BD /* TVMLApps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B844A3C5282BBC9400C972BD /* Build configuration list for PBXNativeTarget "TVMLApps" */;
+			buildPhases = (
+				B844A3B0282BBC9200C972BD /* Sources */,
+				B844A3B1282BBC9200C972BD /* Frameworks */,
+				B844A3B2282BBC9200C972BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TVMLApps;
+			productName = TVMLApps;
+			productReference = B844A3B4282BBC9200C972BD /* TVMLApps.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B844A3AC282BBC9200C972BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					B844A3B3282BBC9200C972BD = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = B844A3AF282BBC9200C972BD /* Build configuration list for PBXProject "TVMLApps" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B844A3AB282BBC9200C972BD;
+			productRefGroup = B844A3B5282BBC9200C972BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B844A3B3282BBC9200C972BD /* TVMLApps */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B844A3B2282BBC9200C972BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B844A3E0282BE15700C972BD /* Presenter.js in Resources */,
+				B844A3C2282BBC9400C972BD /* LaunchScreen.storyboard in Resources */,
+				B844A3BF282BBC9400C972BD /* Assets.xcassets in Resources */,
+				B844A3E2282BE15700C972BD /* application.js in Resources */,
+				B84438F5282D6E6F001A888F /* GradeImageStoryboard.storyboard in Resources */,
+				B844A3E3282BE15700C972BD /* RenderImageTemplate.xml.js in Resources */,
+				B844A3E1282BE15700C972BD /* ResourceLoader.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B844A3B0282BBC9200C972BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B844A3BA282BBC9200C972BD /* GradeImageViewController.swift in Sources */,
+				B84438F3282D3A5F001A888F /* ImageDelegate.swift in Sources */,
+				B844A3B8282BBC9200C972BD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B844A3C0282BBC9400C972BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B844A3C1282BBC9400C972BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B844A3C3282BBC9400C972BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 15.2;
+			};
+			name = Debug;
+		};
+		B844A3C4282BBC9400C972BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 15.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B844A3C6282BBC9400C972BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J87VWLWXPU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SJB.TVMLApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		B844A3C7282BBC9400C972BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J87VWLWXPU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SJB.TVMLApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B844A3AF282BBC9200C972BD /* Build configuration list for PBXProject "TVMLApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B844A3C3282BBC9400C972BD /* Debug */,
+				B844A3C4282BBC9400C972BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B844A3C5282BBC9400C972BD /* Build configuration list for PBXNativeTarget "TVMLApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B844A3C6282BBC9400C972BD /* Debug */,
+				B844A3C7282BBC9400C972BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B844A3AC282BBC9200C972BD /* Project object */;
+}

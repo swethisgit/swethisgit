@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="19529" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Grade Image View Controller-->
+        <scene sceneID="9lE-WX-96o">
+            <objects>
+                <viewController storyboardIdentifier="GradeImageViewController" id="Xgj-up-wSf" customClass="GradeImageViewController" customModule="TVMLApps" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aTn-mJ-5lt"/>
+                        <viewControllerLayoutGuide type="bottom" id="BrO-eL-FPV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oo6-ab-TCE">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xjb-dX-TEx">
+                                <rect key="frame" x="660" y="240" width="600" height="600"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="br3-QO-wcJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <color key="backgroundColor" red="1" green="0.72156862749999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FdC-eZ-hx9">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="br3-QO-wcJ" secondAttribute="trailing" id="8zn-yq-pnT"/>
+                                    <constraint firstAttribute="bottom" secondItem="br3-QO-wcJ" secondAttribute="bottom" id="GGG-f9-cgg"/>
+                                    <constraint firstItem="br3-QO-wcJ" firstAttribute="leading" secondItem="xjb-dX-TEx" secondAttribute="leading" id="Il6-xc-LMH"/>
+                                    <constraint firstItem="FdC-eZ-hx9" firstAttribute="top" secondItem="br3-QO-wcJ" secondAttribute="top" id="QdE-nd-MxR"/>
+                                    <constraint firstAttribute="width" constant="600" id="ZRQ-cX-Ey8"/>
+                                    <constraint firstItem="FdC-eZ-hx9" firstAttribute="leading" secondItem="br3-QO-wcJ" secondAttribute="leading" id="Zsh-Wx-NZc"/>
+                                    <constraint firstItem="br3-QO-wcJ" firstAttribute="top" secondItem="xjb-dX-TEx" secondAttribute="top" id="dcr-2p-x7I"/>
+                                    <constraint firstAttribute="height" constant="600" id="jkM-bV-Zol"/>
+                                    <constraint firstItem="FdC-eZ-hx9" firstAttribute="height" secondItem="br3-QO-wcJ" secondAttribute="height" id="lLz-gq-085"/>
+                                    <constraint firstItem="FdC-eZ-hx9" firstAttribute="width" secondItem="br3-QO-wcJ" secondAttribute="width" id="rSH-me-JtC"/>
+                                    <constraint firstItem="FdC-eZ-hx9" firstAttribute="trailing" secondItem="br3-QO-wcJ" secondAttribute="trailing" id="sST-ba-G4h"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rbh-h3-eDf"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xjb-dX-TEx" firstAttribute="centerY" secondItem="Oo6-ab-TCE" secondAttribute="centerY" id="lAp-HN-Ydr"/>
+                            <constraint firstItem="xjb-dX-TEx" firstAttribute="centerX" secondItem="Oo6-ab-TCE" secondAttribute="centerX" id="o7F-Tj-Ta1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gradeMe" destination="br3-QO-wcJ" id="4y0-O1-E5c"/>
+                        <outlet property="gradeView" destination="FdC-eZ-hx9" id="ebZ-Q0-Ei1"/>
+                        <outlet property="overlayView" destination="xjb-dX-TEx" id="X4o-9F-DLU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uX-ET-Cqw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-32" y="-4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
