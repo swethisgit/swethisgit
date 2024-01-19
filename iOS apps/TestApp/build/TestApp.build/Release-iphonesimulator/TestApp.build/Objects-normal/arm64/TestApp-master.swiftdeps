@@ -1,8 +1,0 @@
-version: "Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)"
-options: "068dd6a4d35205ad3f64e6bf2247471aa0a9e9f73dd9bf22929915edab9ebfee"
-build_start_time: [1666766706, 428439140]
-build_end_time: [1666766727, 388513088]
-inputs:
-  "/Users/swedathiyagarajan/Documents/Ventuno/POC/iOS/TestApp/TestApp/AppDelegate.swift": [1666766009, 552272319]
-  "/Users/swedathiyagarajan/Documents/Ventuno/POC/iOS/TestApp/TestApp/SceneDelegate.swift": [1666766009, 560018539]
-  "/Users/swedathiyagarajan/Documents/Ventuno/POC/iOS/TestApp/TestApp/ViewController.swift": [1666766009, 562399387]
