@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="20037" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TryTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess my name!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgb-Gj-Wb2">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="406"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eee-Vq-V9T" userLabel="OptionsView">
+                                <rect key="frame" x="0.0" y="406" width="1920" height="674"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="u96-4w-2nx">
+                                        <rect key="frame" x="0.0" y="0.0" width="1920" height="674"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="am9-eh-U7p">
+                                                <rect key="frame" x="0.0" y="0.0" width="960" height="674"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Jn-Cg-1qd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="960" height="337"/>
+                                                        <color key="backgroundColor" red="1" green="0.14117647059999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Mac OS"/>
+                                                        <connections>
+                                                            <action selector="macSelected:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="Mje-Fn-aWk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vm-D5-jdk">
+                                                        <rect key="frame" x="0.0" y="337" width="960" height="337"/>
+                                                        <color key="backgroundColor" red="0.1137254902" green="0.72549019609999998" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Watch OS"/>
+                                                        <connections>
+                                                            <action selector="watchOSSelected:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="iK4-rk-9ob"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2bM-cA-ZGP">
+                                                <rect key="frame" x="960" y="0.0" width="960" height="674"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8D-Ef-dot">
+                                                        <rect key="frame" x="0.0" y="0.0" width="960" height="337"/>
+                                                        <color key="backgroundColor" red="0.76470588240000004" green="0.16862745100000001" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="iOS"/>
+                                                        <connections>
+                                                            <action selector="iOSSelected:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="AJg-1K-oc9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N38-dI-dW1">
+                                                        <rect key="frame" x="0.0" y="337" width="960" height="337"/>
+                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="TV OS"/>
+                                                        <connections>
+                                                            <action selector="tvOsSelected:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="OUc-ww-iwf"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="u96-4w-2nx" secondAttribute="trailing" id="Cgm-9h-C9s"/>
+                                    <constraint firstItem="u96-4w-2nx" firstAttribute="leading" secondItem="Eee-Vq-V9T" secondAttribute="leading" id="F2Y-P1-COB"/>
+                                    <constraint firstItem="u96-4w-2nx" firstAttribute="top" secondItem="Eee-Vq-V9T" secondAttribute="top" id="Ovl-PV-kD5"/>
+                                    <constraint firstAttribute="bottom" secondItem="u96-4w-2nx" secondAttribute="bottom" id="eJM-bv-I7l"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zgb-Gj-Wb2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="C3k-YU-u1O"/>
+                            <constraint firstAttribute="bottom" secondItem="Eee-Vq-V9T" secondAttribute="bottom" id="QQV-IN-VhI"/>
+                            <constraint firstAttribute="trailing" secondItem="zgb-Gj-Wb2" secondAttribute="trailing" id="QbS-03-yFv"/>
+                            <constraint firstItem="zgb-Gj-Wb2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Tua-nS-b6M"/>
+                            <constraint firstItem="Eee-Vq-V9T" firstAttribute="width" secondItem="zgb-Gj-Wb2" secondAttribute="height" multiplier="960:203" id="bDW-Va-ojT"/>
+                            <constraint firstAttribute="trailing" secondItem="Eee-Vq-V9T" secondAttribute="trailing" id="dbf-qM-FGb"/>
+                            <constraint firstItem="Eee-Vq-V9T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fYi-aC-q82"/>
+                            <constraint firstItem="Eee-Vq-V9T" firstAttribute="top" secondItem="zgb-Gj-Wb2" secondAttribute="bottom" id="seQ-Nx-h6q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstHello" destination="zgb-Gj-Wb2" id="U6h-zl-hmw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-32" y="-5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
